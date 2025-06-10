@@ -4,23 +4,27 @@ import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LoginPage from "./Pages/loginpage.jsx";
-import RegisterPage from "./Pages/register.jsx";
+import RegisterPage from "./Pages/RegisterPage.jsx";
 import FilmPage from "./Pages/film.jsx";
-import ProdukPage from "./Pages/produk.jsx";
+import ProductPage from "./Pages/ProductPage.jsx";
 import ReviewPage from "./Pages/review.jsx";
-import ProfilPage from "./Pages/profil.jsx";
-import ProductDetail from "./components/Layouts/productdetail.jsx";
-import CartPage from "./Pages/cart.jsx";
+import ProfilPage from "./Pages/ProfilPage.jsx";
+import CartPage from "./Pages/CartPage.jsx";
+import ProductDetailPage from "./Pages/ProductDetailPage.jsx";
 import AboutusPage from "./components/Layouts/layout-profil/aboutUs.jsx";
+import EditProfilePage from "./Pages/EditProfilePage.jsx";
+import SubscriptionHistoryPage from "./Pages/SubscriptionHistoryPage.jsx";
+import NotFoundPage from "./Pages/NotFoundPage.jsx";
+import ProtectedRoute from "./components/ProtectedRoute.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/login",
-    element: <LoginPage></LoginPage>,
+    element: <LoginPage />,
   },
   {
     path: "/register",
-    element: <RegisterPage></RegisterPage>,
+    element: <RegisterPage />,
   },
   {
     path: "/",
@@ -30,24 +34,18 @@ const router = createBrowserRouter([
     path: "/review",
     element: <ReviewPage />,
   },
-
-  {
-    path: "/profil",
-    element: <ProfilPage />,
-  },
   {
     path: "/product",
-    element: <ProdukPage />,
+    element: (
+      <ProtectedRoute>
+        <ProductPage />
+      </ProtectedRoute>
+    ),
   },
   {
-    path: "/cart",
-    element: <CartPage />,
+    path: "/product/:id",
+    element: <ProductDetailPage />,
   },
-  {
-    path: "/product/:name",
-    element: <ProductDetail />,
-  },
-  // sub_menu
   {
     path: "/about",
     element: <AboutusPage />,
@@ -55,6 +53,51 @@ const router = createBrowserRouter([
   {
     path: "/film",
     element: <FilmPage />,
+  },
+  {
+    path: "profil",
+    element: (
+      <ProtectedRoute>
+        <ProfilPage />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "cart",
+    element: (
+      <ProtectedRoute>
+        <CartPage />
+      </ProtectedRoute>
+    ), // Protected
+  },
+  {
+    path: "profil/edit",
+    element: (
+      <ProtectedRoute>
+        <EditProfilePage />
+      </ProtectedRoute>
+    ), // Protected
+  },
+  // {
+  //   path: "profil/verify",
+  //   element: (
+  //     <ProtectedRoute>
+  //       <VerifyIdentityPage />
+  //     </ProtectedRoute>
+  //   ), // Protected
+  // },
+  {
+    path: "profil/history",
+    element: (
+      <ProtectedRoute>
+        <SubscriptionHistoryPage />
+      </ProtectedRoute>
+    ), // Protected
+  },
+  // Catch-all route for unmatched paths within the layout
+  {
+    path: "*",
+    element: <NotFoundPage />,
   },
 ]);
 

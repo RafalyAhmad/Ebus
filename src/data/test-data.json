@@ -1,0 +1,178 @@
+[
+  {
+    "id": "app_netflix_premium",
+    "name": "Netflix Premium Plan",
+    "category": "Streaming",
+    "provider": "Netflix Inc.",
+    "description": "Unlock unlimited movies, TV shows, and more. Enjoy 4K+HDR content on up to 4 screens simultaneously. Download and watch offline. No ads.",
+    "price_tiers": [
+      {
+        "duration_months": 1,
+        "price_idr": 119000,
+        "original_price_idr": 149000,
+        "currency": "IDR",
+        "discount_percentage": 20,
+        "promo_tag": "Best Value!"
+      },
+      {
+        "duration_months": 3,
+        "price_idr": 349000,
+        "original_price_idr": 447000,
+        "currency": "IDR",
+        "discount_percentage": 22
+      },
+      {
+        "duration_months": 12,
+        "price_idr": 1300000,
+        "original_price_idr": 1788000,
+        "currency": "IDR",
+        "discount_percentage": 27,
+        "promo_tag": "Annual Savings!"
+      }
+    ],
+    "features": [
+      "4K Ultra HD + HDR streaming",
+      "Up to 4 concurrent screens",
+      "Download content to watch offline",
+      "Ad-free experience",
+      "All device compatibility (TV, mobile, tablet, laptop)"
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg",
+    "is_popular": true,
+    "rating": 4.8,
+    "reviews_count": 15200
+  },
+  {
+    "id": "app_spotify_family",
+    "name": "Spotify Family Premium",
+    "category": "Music Streaming",
+    "provider": "Spotify AB",
+    "description": "Premium music for up to 6 accounts under one roof. Ad-free listening, offline playback, and unlimited skips.",
+    "price_tiers": [
+      {
+        "duration_months": 1,
+        "price_idr": 79000,
+        "original_price_idr": 99000,
+        "currency": "IDR",
+        "discount_percentage": 20,
+        "promo_tag": "Great Deal!"
+      }
+    ],
+    "features": [
+      "6 individual Premium accounts",
+      "Ad-free music listening",
+      "Play anywhere - offline",
+      "On-demand playback",
+      "Spotify Kids access"
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg",
+    "is_popular": true,
+    "rating": 4.7,
+    "reviews_count": 8900
+  },
+  {
+    "id": "app_adobe_creative_cloud",
+    "name": "Adobe Creative Cloud All Apps",
+    "category": "Design & Productivity",
+    "provider": "Adobe Inc.",
+    "description": "Get 20+ creative desktop and mobile apps including Photoshop, Illustrator, InDesign, Premiere Pro, and Acrobat Pro.",
+    "price_tiers": [
+      {
+        "duration_months": 1,
+        "price_idr": 650000,
+        "original_price_idr": 790000,
+        "currency": "IDR",
+        "discount_percentage": 17.7
+      },
+      {
+        "duration_months": 12,
+        "price_idr": 7200000,
+        "original_price_idr": 9480000,
+        "currency": "IDR",
+        "discount_percentage": 24,
+        "promo_tag": "Save Big Annually!"
+      }
+    ],
+    "features": [
+      "20+ Adobe creative apps",
+      "100GB cloud storage",
+      "Step-by-step tutorials",
+      "Adobe Fonts, Portfolio, and Behance access",
+      "Updates included"
+    ],
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnB_frQPyxWbjJ7FpKsbJKEdBcu_V_Nc-r0g&s",
+    "is_popular": false,
+    "rating": 4.5,
+    "reviews_count": 3100
+  },
+  {
+    "id": "app_microsoft_365_personal",
+    "name": "Microsoft 365 Personal",
+    "category": "Productivity",
+    "provider": "Microsoft Corp.",
+    "description": "One convenient subscription that includes premium Office apps, 1 TB of cloud storage, and advanced security for all your devices.",
+    "price_tiers": [
+      {
+        "duration_months": 1,
+        "price_idr": 85000,
+        "original_price_idr": 109000,
+        "currency": "IDR",
+        "discount_percentage": 22
+      },
+      {
+        "duration_months": 12,
+        "price_idr": 850000,
+        "original_price_idr": 1090000,
+        "currency": "IDR",
+        "discount_percentage": 22,
+        "promo_tag": "Annual Discount!"
+      }
+    ],
+    "features": [
+      "Premium versions of Word, Excel, PowerPoint, Outlook",
+      "1 TB OneDrive cloud storage",
+      "Advanced security for email and files",
+      "Works on Windows, macOS, iOS, and Android",
+      "Ongoing technical support"
+    ],
+    "image_url": "https://igcts.com/wp-content/uploads/2021/08/Microsoft_365_Logo.png",
+    "is_popular": true,
+    "rating": 4.6,
+    "reviews_count": 11500
+  },
+  {
+    "id": "app_canva_pro",
+    "name": "Canva Pro",
+    "category": "Design",
+    "provider": "Canva Pty Ltd",
+    "description": "Unleash your creativity with unlimited premium templates, fonts, photos, and powerful design tools for teams and individuals.",
+    "price_tiers": [
+      {
+        "duration_months": 1,
+        "price_idr": 120000,
+        "original_price_idr": 150000,
+        "currency": "IDR",
+        "discount_percentage": 20
+      },
+      {
+        "duration_months": 12,
+        "price_idr": 1200000,
+        "original_price_idr": 1800000,
+        "currency": "IDR",
+        "discount_percentage": 33.3,
+        "promo_tag": "Big Annual Savings!"
+      }
+    ],
+    "features": [
+      "Unlimited premium templates, photos, videos, audio, and graphics",
+      "Brand Kit for consistent branding",
+      "Magic Resize, Background Remover, Content Planner",
+      "100 GB cloud storage",
+      "Team functionalities"
+    ],
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpqagKqMEAYfajhHl67Xt_NITxxvJmhUjCtg&s",
+    "is_popular": true,
+    "rating": 4.9,
+    "reviews_count": 9800
+  }
+]
